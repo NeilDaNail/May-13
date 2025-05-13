@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        .heartbeat {
+            animation: heartbeat 1.5s ease-in-out infinite both;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .bg-rose {
+            background: linear-gradient(135deg, #f9c5d1 0%, #fce4ec 100%);
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .calendar-day {
+            transition: all 0.3s ease;
+        }
+        
+        .calendar-day:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-rose min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden fade-in">
+        <!-- Header with animated hearts -->
+        <div class="bg-pink-600 p-6 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full flex justify-between px-4">
+                <i class="fas fa-heart text-pink-400 opacity-20 float" style="animation-delay: 0s;"></i>
+                <i class="fas fa-heart text-pink-400 opacity-20 float" style="animation-delay: 1s;"></i>
+                <i class="fas fa-heart text-pink-400 opacity-20 float" style="animation-delay: 2s;"></i>
+                <i class="fas fa-heart text-pink-400 opacity-20 float" style="animation-delay: 3s;"></i>
+            </div>
+            <h1 class="text-4xl font-bold text-white pacifico text-shadow">My Love</h1>
+            <p class="text-pink-100 mt-2">This is for you, my beautiful wife</p>
+        </div>
+        
+        <!-- Main content -->
+        <div class="p-8">
+            <!-- May 13 section -->
+            <div class="text-center mb-10">
+                <div class="inline-block relative">
+                    <div class="heartbeat text-pink-600 text-6xl mb-4">
+                        <i class="fas fa-calendar-heart"></i>
+                    </div>
+                    <div class="absolute -bottom-2 -right-2 bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold">
+                        13
+                    </div>
+                </div>
+                <h2 class="text-3xl font-bold text-pink-700 mt-4 mb-2 pacifico">May 13</h2>
+                <p class="text-gray-600 mb-4">Phewwww.... i almost missed it! do forgive me.. and know that...</p>
+                
+                <div class="bg-pink-50 rounded-xl p-6 max-w-md mx-auto">
+                    <p class="text-4xl font-bold text-pink-600 mb-2 urdu-text" style="direction: rtl;">میں تیرا</p>
+                    <p class="text-gray-500">Mein Tera <3</p>
+                    <!-- <button id="playBtn" class="mt-4 bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full flex items-center mx-auto">
+                        <i class="fas fa-play mr-2"></i> Hear It
+                    </button> -->
+                    <audio id="audio" src="https://youtu.be/goeit4-XJ70?si=CEr2-6QrDDxwSwNd"></audio>
+                </div>
+            </div>
+            
+            <!-- Love message -->
+            <div class="bg-pink-50 rounded-xl p-6 mb-8">
+                <h3 class="text-2xl font-bold text-pink-700 mb-4 pacifico">My Promise to You</h3>
+                <p class="text-gray-700 mb-4">I promise, love, to hold your name
+                    like firelight that warms the flame.
+                    To walk beside you, through and through,
+                    in every dawn, in every blue.
+                    
+                    I promise eyes that truly see—
+                    the storm, the shine, the poetry.
+                    To lift your soul when it feels low,
+                    and laugh with you through falling snow.
+                    
+                    I’ll be the calm inside your wild,
+                    the home you crave, the foolish child.
+                    A hand to hold, a heart to trust,
+                    a love that never gathers dust.
+                    
+                    I promise joy when life feels thin,
+                    to let you out, to pull you in.
+                    To fight for us with gentle might,
+                    and kiss you soft at every night.
+                    
+                    So mark this vow—no grand parade,
+                    just quiet truth, and love well made.
+                    I am yours, through every phase,
+                    in all tomorrows, all our days.</p>
+                <p class="text-gray-700">You're the love of my life, and I'm forever yours. This little website is my way of making it up to you <3</p>
+            </div>
+            
+            <!-- Calendar showing May 13 highlighted -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-pink-700 mb-4 text-center pacifico">Our Special Date</h3>
+                <div class="grid grid-cols-7 gap-2 max-w-md mx-auto">
+                    <div class="text-center font-bold text-pink-600">S</div>
+                    <div class="text-center font-bold text-pink-600">M</div>
+                    <div class="text-center font-bold text-pink-600">T</div>
+                    <div class="text-center font-bold text-pink-600">W</div>
+                    <div class="text-center font-bold text-pink-600">T</div>
+                    <div class="text-center font-bold text-pink-600">F</div>
+                    <div class="text-center font-bold text-pink-600">S</div>
+                    
+                    <!-- Empty days -->
+                    <div class="h-10"></div>
+                    <div class="h-10"></div>
+                    <div class="h-10"></div>
+                    <div class="h-10"></div>
+                    
+                    <!-- May dates -->
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">1</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">2</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">3</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">4</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">5</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">6</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">7</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">8</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">9</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">10</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">11</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">12</div>
+                    <div class="calendar-day bg-pink-600 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold transform scale-110 shadow-lg">13</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">14</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">15</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">16</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">17</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">18</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">19</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">20</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">21</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">22</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">23</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">24</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">25</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">26</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">27</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">28</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">29</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">30</div>
+                    <div class="calendar-day bg-pink-100 rounded-full h-10 w-10 flex items-center justify-center">31</div>
+                </div>
+            </div>
+            
+            <!-- Photo frame (placeholder - you can add your actual photo) -->
+            <!-- <div class="relative mx-auto max-w-xs mb-8">
+                <div class="absolute -inset-2 bg-pink-200 rounded-xl transform rotate-2"></div>
+                <div class="relative bg-white p-2 rounded-xl shadow-md">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center rounded-lg overflow-hidden">
+                        <i class="fas fa-heart text-pink-400 text-6xl"></i>
+                        <div class="absolute bottom-2 right-2 bg-pink-500 text-white px-2 py-1 rounded text-xs">
+                            <i class="fas fa-camera mr-1"></i> Our Photo
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Final message -->
+            <div class="text-center">
+                <p class="text-gray-600 mb-4">Every day with you is special, but today I wanted to make it extra special. (i even acted as if i didnt do anything TWT ydk how badly i was holding it in TWT)
+
+                    I LOVE YOU THO <3333!!!!
+                </p>
+                <div class="heartbeat text-pink-600 text-4xl inline-block">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-pink-100 p-4 text-center text-pink-600">
+            <p>Made with <i class="fas fa-heart text-pink-600"></i> for you</p>
+        </div>
+    </div>
+    
+    <script>
+        // Play audio when button is clicked
+        document.getElementById('playBtn').addEventListener('click', function() {
+            const audio = document.getElementById('audio');
+            const btnIcon = this.querySelector('i');
+            
+            if (audio.paused) {
+                audio.play();
+                btnIcon.classList.remove('fa-play');
+                btnIcon.classList.add('fa-pause');
+                this.classList.add('bg-pink-600');
+            } else {
+                audio.pause();
+                btnIcon.classList.remove('fa-pause');
+                btnIcon.classList.add('fa-play');
+                this.classList.remove('bg-pink-600');
+            }
+        });
+        
+        // Confetti effect when clicking on the calendar day
+        document.querySelectorAll('.calendar-day').forEach(day => {
+            day.addEventListener('click', function() {
+                if (this.textContent === '13') {
+                    createHearts();
+                }
+            });
+        });
+        
+        function createHearts() {
+            for (let i = 0; i < 20; i++) {
+                const heart = document.createElement('div');
+                heart.innerHTML = '<i class="fas fa-heart text-pink-500"></i>';
+                heart.className = 'absolute text-xl animate-heart';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = -20 + 'px';
+                heart.style.opacity = Math.random();
+                heart.style.animation = `floatHeart ${2 + Math.random() * 3}s ease-in forwards`;
+                
+                document.body.appendChild(heart);
+                
+                setTimeout(() => {
+                    heart.remove();
+                }, 3000);
+            }
+        }
+        
+        // Add CSS for floating hearts
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes floatHeart {
+                to {
+                    transform: translateY(calc(100vh + 20px)) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+            .animate-heart {
+                animation: floatHeart 3s ease-in forwards;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
